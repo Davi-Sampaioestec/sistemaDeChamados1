@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abrir Chamado</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Abrir Chamado</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="abrir_chamado.html">Abrir Chamado</a>
+            <a href="listar_chamados.html">Chamados</a>
+            <a href="login.html">Sair</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <h2>Novo Chamado</h2>
+
+        <form class="form-box">
+
+            <label>Título do Chamado:</label>
+            <input type="text" placeholder="Digite o título" required>
+
+            <label>Descrição:</label>
+            <textarea rows="5" placeholder="Descreva o problema" required></textarea>
+
+            <label>Setor:</label>
+            <select required>
+                <option value="">Selecione...</option>
+                <option>TI</option>
+                <option>ADM</option>
+                <option>Financeiro</option>
+                <option>RH</option>
+            </select>
+
+            <label>Prioridade:</label>
+            <select required>
+                <option value="">Selecione...</option>
+                <option>Baixa</option>
+                <option>Média</option>
+                <option>Alta</option>
+            </select>
+
+            <button type="submit" class="btn">Cadastrar Chamado</button>
+
+        </form>
+
+    </main>
+
+</body>
+</html>
